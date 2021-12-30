@@ -3,12 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Integrando HTML, CSS e JS</title>
+    <title>Mini Projetos Web</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#projeto").load("./1_expanding_cards/index.html");
+            });
+        });
+    </script>
 </head>
 
 <body>
     <h1>Mini Projetos Web</h1>
+    <button id="button">teste</button>
     <div class="conteudo">
         <div class="menu-principal">
             <nav>
